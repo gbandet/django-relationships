@@ -1,9 +1,9 @@
 from django.contrib import admin
-from django.contrib.auth.models import User
 from django.contrib.auth.admin import UserAdmin
 
 from relationships.forms import RelationshipStatusAdminForm
 from relationships.models import Relationship, RelationshipStatus
+from relationships.user import User
 
 
 class RelationshipInline(admin.TabularInline):
